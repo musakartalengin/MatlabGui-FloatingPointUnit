@@ -1,0 +1,18 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Musa/Floating_Point_Alu_/test_project_6.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sim_1/new/tb.v,1704556467,verilog,,,,tb,,,,,,,,
+C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/combinee.v,1700742929,verilog,,C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/fp_bolme.v,,combinee,,,,,,,,
+C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/fp_bolme.v,1704899770,verilog,,C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/fp_carpma.v,,fp_bolme,,,,,,,,
+C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/fp_carpma.v,1701705661,verilog,,C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/fp_cikarma.v,,fp_carpma,,,,,,,,
+C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/fp_cikarma.v,1701802174,verilog,,C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/fp_int_don.v,,fp_cikarma,,,,,,,,
+C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/fp_int_don.v,1701863858,verilog,,C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/fp_topla.v,,fp_int_don,,,,,,,,
+C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/fp_topla.v,1700774040,verilog,,C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/int_fp_don.v,,fp_topla,,,,,,,,
+C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/int_fp_don.v,1700757222,verilog,,C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/multiplier.v,,int_fp_don,,,,,,,,
+C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/multiplier.v,1702420046,verilog,,C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/ram.v,,multiplier,,,,,,,,
+C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/ram.v,1700739585,verilog,,C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/uart_rx_t.v,,ram,,,,,,,,
+C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/uart_rx_t.v,1700124805,verilog,,C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/uart_top.v,,uart_rx_t,,,,,,,,
+C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/uart_top.v,1704899617,verilog,,C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/uart_tx_t.v,,uart_top,,,,,,,,
+C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sources_1/new/uart_tx_t.v,1700570557,verilog,,C:/Users/Musa/Floating_Point_Alu_/test_project_6.srcs/sim_1/new/tb.v,,uart_tx_t,,,,,,,,

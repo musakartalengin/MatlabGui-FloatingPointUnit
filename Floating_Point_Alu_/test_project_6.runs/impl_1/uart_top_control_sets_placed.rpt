@@ -1,0 +1,178 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Jan 22 14:38:34 2024
+| Host         : DESKTOP-COD72UV running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file uart_top_control_sets_placed.rpt
+| Design       : uart_top
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   100 |
+|    Minimum number of control sets                        |   100 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    84 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   100 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |    10 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |    12 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    74 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              89 |           45 |
+| No           | No                    | Yes                    |               7 |            3 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            1162 |          370 |
+| Yes          | No                    | Yes                    |             292 |           98 |
+| Yes          | Yes                   | No                     |            1158 |          308 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------+---------------------------------------------+------------------+----------------+
+|  Clock Signal  |                 Enable Signal                |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------------+---------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | combinee_top/state[3]_i_1_n_0                | reset_IBUF                                  |                2 |              4 |
+|  clk_IBUF_BUFG | fp_cikarmax/FSM_sequential_durum[3]_i_2_n_0  | fp_cikarmax/FSM_sequential_durum[3]_i_1_n_0 |                3 |              4 |
+|  clk_IBUF_BUFG | addr_in                                      |                                             |                1 |              4 |
+|  clk_IBUF_BUFG | address                                      |                                             |                1 |              4 |
+|  clk_IBUF_BUFG | int_fp_don_top/k1[31]_i_2_n_0                |                                             |                1 |              4 |
+|  clk_IBUF_BUFG | fp_toplama/FSM_onehot_durum[4]_i_2_n_0       | fp_toplama/FSM_onehot_durum[4]_i_1_n_0      |                2 |              5 |
+|  clk_IBUF_BUFG | fp_bolmex/us2[6]_i_1_n_0                     |                                             |                2 |              5 |
+|  clk_IBUF_BUFG | fp_bolmex/say_icb[4]_i_1_n_0                 |                                             |                2 |              5 |
+|  clk_IBUF_BUFG | sonuc_point_poz                              |                                             |                1 |              5 |
+|  clk_IBUF_BUFG | uart_rx_ram/state_reg[3]                     | uart_rx_ram/r_Rx_done_reg_1                 |                1 |              5 |
+|  clk_IBUF_BUFG | fp_int_donx/FSM_onehot_durum[5]_i_2_n_0      | fp_int_donx/FSM_onehot_durum[5]_i_1_n_0     |                1 |              6 |
+|  clk_IBUF_BUFG |                                              | reset_IBUF                                  |                3 |              7 |
+|  clk_IBUF_BUFG | fp_carpmax/exp[7]_i_1_n_0                    | fp_carpmax/say_ic[31]_i_1_n_0               |                3 |              8 |
+|  clk_IBUF_BUFG | i_Tx_Byte                                    |                                             |                1 |              8 |
+|  clk_IBUF_BUFG | transit_val0                                 | reset_IBUF                                  |                3 |              8 |
+|  clk_IBUF_BUFG | write_en_reg_n_0                             |                                             |                2 |              8 |
+|  clk_IBUF_BUFG | fp_cikarmax/exp[30]_i_1_n_0                  |                                             |                6 |              8 |
+|  clk_IBUF_BUFG | RAM/p_0_out                                  |                                             |                2 |              8 |
+|  clk_IBUF_BUFG | data_input                                   |                                             |                2 |              8 |
+|  clk_IBUF_BUFG | uart_tx_ram/r_Tx_Data                        |                                             |                1 |              8 |
+|  clk_IBUF_BUFG | uart_tx_ram/state_reg[0]_rep                 | reset_IBUF                                  |                4 |              8 |
+|  clk_IBUF_BUFG | fp_int_donx/E2                               | fp_int_donx/FSM_onehot_durum[5]_i_1_n_0     |                2 |              8 |
+|  clk_IBUF_BUFG | uart_tx_ram/state_reg[2][0]                  | reset_IBUF                                  |                1 |              8 |
+|  clk_IBUF_BUFG | transit_val10                                | reset_IBUF                                  |                1 |              8 |
+|  clk_IBUF_BUFG | uart_rx_ram/r_Clock_Count[9]_i_1__0_n_0      |                                             |                5 |             10 |
+|  clk_IBUF_BUFG | uart_tx_ram/r_Clock_Count[9]_i_2_n_0         | uart_tx_ram/r_Tx_Done0                      |                3 |             10 |
+|  clk_IBUF_BUFG | fp_int_donx/s5cikis[15]_i_1_n_0              |                                             |                4 |             16 |
+|  clk_IBUF_BUFG | int_sonuc                                    |                                             |                3 |             16 |
+|  clk_IBUF_BUFG | fp_int_donx/s4[15]_i_1_n_0                   | fp_int_donx/x[31]_i_1__0_n_0                |                6 |             16 |
+|  clk_IBUF_BUFG | sonuc_segment_int                            |                                             |                2 |             16 |
+|  clk_IBUF_BUFG | fp_toplama/ex_y[7]_i_1_n_0                   | fp_toplama/sayac[31]_i_1_n_0                |                3 |             16 |
+|  clk_IBUF_BUFG | binary_input                                 |                                             |                3 |             16 |
+|  clk_IBUF_BUFG | int_fp_don_top/M1                            |                                             |                7 |             23 |
+|  clk_IBUF_BUFG | int_fp_don_top/M2                            | int_fp_don_top/M2[22]_i_1_n_0               |                9 |             23 |
+|  clk_IBUF_BUFG | fp_bolmex/bolumson[22]_i_1_n_0               |                                             |                5 |             23 |
+|  clk_IBUF_BUFG | fp_carpmax/man[22]_i_1_n_0                   | fp_carpmax/say_ic[31]_i_1_n_0               |                4 |             23 |
+|  clk_IBUF_BUFG | fp_bolmex/rmb[22]_i_1_n_0                    |                                             |                4 |             23 |
+|  clk_IBUF_BUFG | fp_int_donx/s3[23]_i_1_n_0                   | fp_int_donx/x[31]_i_1__0_n_0                |                8 |             24 |
+|  clk_IBUF_BUFG | fp_bolmex/rma[23]_i_1_n_0                    |                                             |               12 |             24 |
+|  clk_IBUF_BUFG | fp_cikarmax/man_s[24]_i_1_n_0                | reset_IBUF                                  |                8 |             25 |
+|  clk_IBUF_BUFG | g1_int                                       |                                             |                8 |             31 |
+|  clk_IBUF_BUFG | fp_int_donx/FSM_onehot_durum[0]_i_1__0_n_0   | fp_int_donx/FSM_onehot_durum[5]_i_1_n_0     |                6 |             31 |
+|  clk_IBUF_BUFG | sonuc_segment_fp                             |                                             |                9 |             31 |
+|  clk_IBUF_BUFG | fp_toplama/sonmantis[22]_i_1_n_0             | fp_toplama/sayac[31]_i_1_n_0                |               10 |             31 |
+|  clk_IBUF_BUFG | fp_cikarmax/e_A[30]_i_1_n_0                  |                                             |               14 |             32 |
+|  clk_IBUF_BUFG | fp_cikarmax/e_B[30]_i_1_n_0                  |                                             |               13 |             32 |
+|  clk_IBUF_BUFG | fp_cikarmax/fark_o[31]_i_2_n_0               | fp_cikarmax/fark_o[31]_i_1_n_0              |                7 |             32 |
+|  clk_IBUF_BUFG | int_fp_don_top/cik1[31]_i_2_n_0              | int_fp_don_top/cik1[31]_i_1_n_0             |                7 |             32 |
+|  clk_IBUF_BUFG | int_fp_don_top/s1[31]_i_2_n_0                | int_fp_don_top/s1[31]_i_1_n_0               |               11 |             32 |
+|  clk_IBUF_BUFG | int_fp_don_top/us2[31]_i_2_n_0               | int_fp_don_top/us2[31]_i_1_n_0              |                9 |             32 |
+|  clk_IBUF_BUFG | int_fp_don_top/us[31]_i_2_n_0                | int_fp_don_top/us[31]_i_1_n_0               |                5 |             32 |
+|  clk_IBUF_BUFG | fp_cikarmax/E[0]                             | fp_cikarmax/FSM_sequential_durum[3]_i_1_n_0 |                6 |             32 |
+|  clk_IBUF_BUFG | fp_cikarmax/E[0]                             | int_fp_don_top/x[31]_i_1__1_n_0             |                9 |             32 |
+|  clk_IBUF_BUFG | fp_cikarmax/E[0]                             | fp_toplama/sayac[31]_i_1_n_0                |                9 |             32 |
+|  clk_IBUF_BUFG | fp_cikarmax/E[0]                             | fp_int_donx/x[31]_i_1__0_n_0                |                9 |             32 |
+|  clk_IBUF_BUFG | fp_cikarmax/E[0]                             | fp_carpmax/sayac[31]_i_1__0_n_0             |                4 |             32 |
+|  clk_IBUF_BUFG | fp_bolmex/say_bol[31]_i_1_n_0                |                                             |                9 |             32 |
+|  clk_IBUF_BUFG | fp_carpmax/say_ic[31]_i_2_n_0                | fp_carpmax/say_ic[31]_i_1_n_0               |                6 |             32 |
+|  clk_IBUF_BUFG | combinee_top/dot_position[31]_i_1_n_0        | reset_IBUF                                  |               10 |             32 |
+|  clk_IBUF_BUFG | combinee_top/left_first_side[31]_i_1_n_0     | reset_IBUF                                  |                9 |             32 |
+|  clk_IBUF_BUFG | combinee_top/left_second_side[31]_i_1_n_0    | reset_IBUF                                  |                9 |             32 |
+|  clk_IBUF_BUFG | combinee_top/p_0_in                          |                                             |                4 |             32 |
+|  clk_IBUF_BUFG | fp_toplama/sonuc[31]_i_1_n_0                 |                                             |               14 |             32 |
+|  clk_IBUF_BUFG | combinee_top/right_first_side[31]_i_1_n_0    | reset_IBUF                                  |                9 |             32 |
+|  clk_IBUF_BUFG | combinee_top/right_second_side[31]_i_1_n_0   | reset_IBUF                                  |                9 |             32 |
+|  clk_IBUF_BUFG | combinee_top/FF_position[31]_i_1_n_0         | reset_IBUF                                  |               13 |             32 |
+|  clk_IBUF_BUFG | combinee_top/counter[31]_i_1_n_0             | reset_IBUF                                  |               12 |             32 |
+|  clk_IBUF_BUFG | combinee_top/E[0]                            |                                             |               31 |             32 |
+|  clk_IBUF_BUFG | combinee_top/gec_reg[31][0]                  |                                             |               16 |             32 |
+|  clk_IBUF_BUFG | fp_bolmex/say_ic1[31]_i_1_n_0                | reset_IBUF                                  |                9 |             32 |
+|  clk_IBUF_BUFG | combinee_top/second_dot_position[31]_i_1_n_0 | reset_IBUF                                  |               11 |             32 |
+|  clk_IBUF_BUFG | combinee_top/state_1_reg[0]_1                | combinee_top/state_1_reg[0]_4               |                6 |             32 |
+|  clk_IBUF_BUFG | combinee_top/state_1_reg[1]_rep_0            | combinee_top/state_1_reg[1]_rep_2           |                8 |             32 |
+|  clk_IBUF_BUFG | combinee_top/state_reg[2]_1                  | combinee_top/state_reg[2]_0                 |                6 |             32 |
+|  clk_IBUF_BUFG | combinee_top/state_reg[2]_3                  | combinee_top/state_reg[2]_2                 |                9 |             32 |
+|  clk_IBUF_BUFG | fp_bolmex/say_ica[31]_i_1_n_0                |                                             |                9 |             32 |
+|  clk_IBUF_BUFG | s1                                           |                                             |               10 |             32 |
+|  clk_IBUF_BUFG | sonuc_point_poz_don                          |                                             |                7 |             32 |
+|  clk_IBUF_BUFG | s2                                           |                                             |               11 |             32 |
+|  clk_IBUF_BUFG | fp_bolmex/sx[31]_i_1_n_0                     | reset_IBUF                                  |                8 |             32 |
+|  clk_IBUF_BUFG | combinee_top/plus_position[31]_i_1_n_0       | reset_IBUF                                  |               14 |             32 |
+|  clk_IBUF_BUFG | fp_bolmex/min[31]_i_1_n_0                    |                                             |                8 |             32 |
+|  clk_IBUF_BUFG | fp_carpmax/snc[31]_i_2_n_0                   | fp_carpmax/snc[31]_i_1_n_0                  |                8 |             32 |
+|  clk_IBUF_BUFG | decimal_top_s1                               | decimal_top_s1[31]_i_1_n_0                  |                8 |             32 |
+|  clk_IBUF_BUFG | decimal_top_s2                               | decimal_top_s2[31]_i_1_n_0                  |                7 |             32 |
+|  clk_IBUF_BUFG | don5                                         |                                             |                7 |             32 |
+|  clk_IBUF_BUFG | don6                                         |                                             |                6 |             32 |
+|  clk_IBUF_BUFG | sonuc                                        |                                             |               11 |             32 |
+|  clk_IBUF_BUFG | fp_bolmex/durum1[0]_i_1_n_0                  |                                             |                9 |             34 |
+|  clk_IBUF_BUFG | int_fp_don_top/k1[31]_i_2_n_0                | int_fp_don_top/k1[31]_i_1_n_0               |                9 |             36 |
+|  clk_IBUF_BUFG | fp_carpmax/man_2[22]_i_1_n_0                 | fp_carpmax/sayac[31]_i_1__0_n_0             |               12 |             47 |
+|  clk_IBUF_BUFG | fp_carpmax/man_ara[47]_i_1_n_0               | fp_carpmax/sayac[31]_i_1__0_n_0             |               13 |             48 |
+|  clk_IBUF_BUFG | fp_toplama/Nym[23]_i_1_n_0                   | fp_toplama/sayac[31]_i_1_n_0                |               27 |             56 |
+|  clk_IBUF_BUFG | A_i_cikarma                                  |                                             |               20 |             64 |
+|  clk_IBUF_BUFG | a_i_top                                      |                                             |               22 |             64 |
+|  clk_IBUF_BUFG | int_fp_don_top/i                             | int_fp_don_top/say[31]_i_1_n_0              |               18 |             64 |
+|  clk_IBUF_BUFG | x1_i_carpma                                  |                                             |               11 |             64 |
+|  clk_IBUF_BUFG | g1_i_toplama                                 |                                             |               19 |             64 |
+|  clk_IBUF_BUFG |                                              |                                             |               45 |             89 |
+|  clk_IBUF_BUFG | combinee_top/left_first_data_out[31]_i_1_n_0 |                                             |               41 |            128 |
++----------------+----------------------------------------------+---------------------------------------------+------------------+----------------+
+
+
